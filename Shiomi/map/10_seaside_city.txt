@@ -14,7 +14,7 @@ BveTs Map 2.02:utf-8
   Station['shiomihama'].Put(-1, -5, 5);
 
   # --- 軌道・架線 ---
-  Repeater['rail'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_slab');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_slab');
   Repeater['cate'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 40, 40, 'catenary_pole');
   Structure['city_footbridge'].Put('0', 0, 6.5, 0, 0, 0, 0, 0, 0);
 

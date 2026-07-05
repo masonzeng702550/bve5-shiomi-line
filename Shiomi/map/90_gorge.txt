@@ -13,7 +13,7 @@ BveTs Map 2.02:utf-8
   Gradient.Begin(33);         # +33‰ 最急勾配
 
   # --- 渓谷の岩壁・渓流 ---
-  Repeater['rail9'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
   Repeater['rock'].Begin('0', 9, -3, 0, 0, 0, 0, 0, 20, 20, 'mtn_rock_wall');
   Repeater['stream'].Begin('0', -14, -8, 0, 0, 0, 0, 0, 40, 40, 'mtn_stream');
   Sound3D['river'].Put(-12, -6);
