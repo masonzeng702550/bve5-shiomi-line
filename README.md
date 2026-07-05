@@ -1,153 +1,163 @@
-# 汐見湾鉄道 汐見線 — Shiomi Line
+<!-- Language: **English** · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md) -->
+**English** · [日本語](README.ja.md) · [繁體中文](README.zh-TW.md)
 
-BVE Trainsim 5 / 6 用の架空路線データ。海の街から霧深い温泉郷まで、
-**一度の乗車で十の風景**を巡る全長 27.4 km・12 駅の地方私鉄です。
+# Shiomiwan Railway — Shiomi Line (汐見湾鉄道 汐見線)
 
-> 海 → 港 → 海岸線 → 市街高架 → 地下 → 大鉄橋 → 桜並木 → 水田 → 里山 → 渓谷 → 温泉街
+A fictional route for BVE Trainsim 5 / 6. A 27.4 km, 12-station local
+private railway that runs from a seaside town to a fog-wrapped hot-spring
+resort — **ten different sceneries in a single ride**.
 
-## 路線諸元
+> Sea → Harbour → Coastline → City viaduct → Underground → Great truss bridge → Cherry-blossom avenue → Paddy fields → Satoyama → Gorge → Onsen town
 
-| 項目 | 値 |
-|------|-----|
-| 区間 | 汐見浜 〜 霧山温泉 |
-| 営業キロ | 27.4 km |
-| 駅数 | 12（うち交換駅 4） |
-| 軌間 | 1,067 mm |
-| 電化 | 直流 1,500 V |
-| 最高速度 | 95 km/h（山岳区間 65 km/h） |
-| 最急勾配 | 33 ‰（渓谷区間） |
-| 最小曲線 | R160（渓谷区間） |
-| 保安装置 | ATS-Sn（4現示自動閉塞・単線） |
-| 運転時分 | 各停 約42分 / 快速 約38分 |
+## Line data
 
-## 十の風景帯
+| Item | Value |
+|------|-------|
+| Section | Shiomihama – Kiriyama-Onsen |
+| Operating distance | 27.4 km |
+| Stations | 12 (4 with passing loops) |
+| Gauge | 1,067 mm |
+| Electrification | 1,500 V DC |
+| Max speed | 95 km/h (65 km/h in mountains) |
+| Steepest gradient | 33 ‰ (gorge section) |
+| Min curve radius | R160 (gorge section) |
+| Safety system | ATS-Sn (4-aspect automatic block, single track) |
+| Run time | Local ≈ 42 min / Rapid ≈ 38 min |
 
-| # | 区間 (km) | 風景 |
-|---|-----------|------|
-| ① | 0.0–1.0 | 海辺の都市（始発駅・汐見浜） |
-| ② | 1.0–3.8 | 太平洋の海岸線・灯台 |
-| ③ | 3.8–5.8 | 市街を見下ろす高架 |
-| ④ | 5.8–7.0 | 地下区間・地下駅 |
-| ⑤ | 7.0–8.5 | 大川を渡るトラス鉄橋 |
-| ⑥ | 8.5–12.5 | 桜並木の郊外住宅地 |
-| ⑦ | 12.5–16.5 | 一面の水田・田園 |
-| ⑧ | 16.5–20.0 | 里山の杉木立・鎮守の森 |
-| ⑨ | 20.0–24.0 | 渓谷（33‰・トンネル5本・鋼橋3本） |
-| ⑩ | 24.0–27.4 | 霧に煙る温泉街（終着） |
+## The ten scenery bands
 
-## 収録シナリオ
+| # | Section (km) | Scenery |
+|---|--------------|---------|
+| ① | 0.0–1.0 | Seaside city (terminus Shiomihama) |
+| ② | 1.0–3.8 | Pacific coastline & lighthouse |
+| ③ | 3.8–5.8 | Viaduct overlooking the city |
+| ④ | 5.8–7.0 | Underground section & subway station |
+| ⑤ | 7.0–8.5 | Truss bridge over the Okawa river |
+| ⑥ | 8.5–12.5 | Cherry-blossom suburb |
+| ⑦ | 12.5–16.5 | Open paddy fields |
+| ⑧ | 16.5–20.0 | Satoyama cedar forest & shrine |
+| ⑨ | 20.0–24.0 | Gorge (33 ‰, 5 tunnels, 3 steel bridges) |
+| ⑩ | 24.0–27.4 | Fog-shrouded onsen town (terminus) |
 
-| シナリオ | 種別 | 天候 | 概要 |
-|----------|------|------|------|
-| `scenario/shiomi_day.txt` | 各駅停車 | 昼・晴 | 標準。全駅停車・ワンマン |
-| `scenario/shiomi_night.txt` | 各駅停車 | 夜 | 月明かりと車内灯の夜行ダイヤ |
-| `scenario/shiomi_rain.txt` | 各駅停車 | 雨 | 濡れたレールで空転しやすい上級者向け |
-| `scenario/shiomi_rapid.txt` | 快速しおかぜ | 昼・晴 | 5駅通過・38分 |
+## Bundled scenarios
 
-## 動作環境
+| Scenario | Type | Weather | Notes |
+|----------|------|---------|-------|
+| `scenario/shiomi_day.txt` | Local (all-stop) | Day / clear | Standard, one-man operation |
+| `scenario/shiomi_night.txt` | Local | Night | Moonlight & cab lamp only |
+| `scenario/shiomi_rain.txt` | Local | Rain | Wet rail, prone to wheelslip — advanced |
+| `scenario/shiomi_rapid.txt` | Rapid "Shiokaze" | Day / clear | Skips 5 stations, 38 min |
 
-- BVE Trainsim 5.7 以降 / BVE Trainsim 6
-- マップ書式 `BveTs Map 2.02`、文字コード **UTF-8**
+## Requirements
 
-## 導入手順（チュートリアル）
+- BVE Trainsim 5.7 or later / BVE Trainsim 6
+- Map format `BveTs Map 2.02`, encoding **UTF-8**
 
-> **前提**: BVE Trainsim は **Windows 専用**です（macOS の方は Parallels / Boot Camp / VM 等が必要）。
-> まだ本体が無い場合は公式サイトから入手してください → [bvets.net ダウンロード](https://bvets.net/en/download/)
+## Installation (tutorial)
 
-### STEP 1 — ファイルを入手する
-本リポジトリ右上の **Code → Download ZIP**、または Git で取得します。
+> **Prerequisite:** BVE Trainsim is **Windows-only** (on macOS use Parallels /
+> Boot Camp / a VM). If you don't have it yet, get it from the official site →
+> [bvets.net download](https://bvets.net/en/download/)
+
+### STEP 1 — Get the files
+Use **Code → Download ZIP** at the top of this repo, or clone with Git:
 ```
 git clone https://github.com/masonzeng702550/bve5-shiomi-line.git
 ```
 
-### STEP 2 — シナリオフォルダに配置する
-`bve5-shiomi-line` フォルダごと、BVE のシナリオフォルダ配下に置きます（例）。
+### STEP 2 — Place it in your scenario folder
+Put the whole `bve5-shiomi-line` folder under BVE's scenario folder, e.g.:
 ```
-ドキュメント\BveTs\Scenarios\bve5-shiomi-line\
+Documents\BveTs\Scenarios\bve5-shiomi-line\
 ```
-BVE の **オプション設定 → シナリオ** で、シナリオフォルダがこの場所を指しているか確認してください。
-`scenario\` と `Shiomi\` の相対位置は変更しないでください（全パスが相対指定のため）。
+In BVE, check **Options → Scenario** points to this folder. Do not change the
+relative positions of `scenario\` and `Shiomi\` (all paths are relative).
 
-### STEP 3 — 車両を用意し、`Vehicle =` を書き換える
-本路線に車両は同梱していません。任意の**通勤形（3両編成推奨）**を入手し（下記「対応車両の入手」）、
-`scenario\` 内の各 `.txt` の次の行を、入手した車両の `Vehicle.txt` への相対パスに書き換えます。
+### STEP 3 — Provide a train and edit the `Vehicle =` line
+No train is bundled. Get any **commuter EMU (3-car recommended)** (see
+"Getting a compatible train" below), then edit this line in each `.txt` under
+`scenario\` to point at your train's `Vehicle.txt`:
 ```
-Vehicle = ..\..\vehicle\generic_3car\vehicle.txt   ← ここを実際のパスへ
+Vehicle = ..\..\vehicle\generic_3car\vehicle.txt   ← change to your real path
 ```
 
-### STEP 4 — 3Dモデル(.x)・テクスチャを配置する
-`Shiomi\structure\structures.txt` の各行の右側が、モデルを置くべきパスです（例 `..\objects\coast\lighthouse.x`）。
-対応する `Shiomi\objects\...` に `.x` モデルと `.png` テクスチャを配置します。
-未整備のまま**線形だけ先に試したい**場合は、structures.txt の該当行頭に `#` を付けてコメントアウトすれば、
-軌道のみの状態で通しで運転できます。
+### STEP 4 — Place the 3D models (.x) and textures
+The right side of each line in `Shiomi\structure\structures.txt` is the path a
+model should live at (e.g. `..\objects\coast\lighthouse.x`). Put the `.x`
+models and `.png` textures at the matching `Shiomi\objects\...` locations.
+To **test the alignment first without art assets**, comment out those lines by
+prefixing `#`; you can then drive the whole route with track only.
 
-### STEP 5 — 起動する
-BVE を起動 → シナリオ選択画面で **「汐見線 普通 霧山温泉行」**（夜／雨／快速も各々表示）を選んで運転開始。
+### STEP 5 — Launch
+Start BVE → on the scenario screen pick **"Shiomi Line Local for
+Kiriyama-Onsen"** (night / rain / rapid appear too) → drive.
 
-## 対応車両の入手（別途必要）
+## Getting a compatible train (required separately)
 
-本路線は各停・快速とも**3両編成**を想定していますが（ホーム長・停車位置・時分は3両基準）、
-任意の通勤形車両でも運転できます。以下からフリー車両を入手し、STEP 3 の要領で差し替えてください。
-**各配布元の利用規約を必ず確認**のうえダウンロードしてください。
+Both local and rapid assume a **3-car** set (platform length, stop position
+and timings are based on 3 cars), but any commuter EMU will work. Download a
+free train below and swap it in per STEP 3. **Always check each distributor's
+terms of use** before downloading.
 
-| 入手先 | 内容 |
-|--------|------|
-| [公式ダウンロード（bvets.net）](https://bvets.net/en/download/) | 本体・公式サンプル車両（京成千葉線ほか） |
-| [BVE5対応 車両データ一覧表（Players Wiki）](https://wikiwiki.jp/bvets/BVE5%E5%AF%BE%E5%BF%9C%E3%83%87%E3%83%BC%E3%82%BF%E4%B8%80%E8%A6%A7/%E8%BB%8A%E4%B8%A1%E3%83%87%E3%83%BC%E3%82%BF%E4%B8%80%E8%A6%A7%E8%A1%A8) | コミュニティ網羅インデックス。「通勤・近郊型電車」の項が該当（最も探しやすい） |
-| [テツドウのホームページ](https://tetsudo-1998.jimdofree.com/bve5/%E8%BB%8A%E4%B8%A1%E3%83%87%E3%83%BC%E3%82%BF/) | 大阪メトロ系の通勤車（御堂筋線10系ほか、7z配布） |
-| [中部新都市運輸区](https://bvetk.arkw.net/download.html) | 通勤車を含む車両・路線データ |
-| [横浜鉄道研究室](https://softwarenet.wixsite.com/yktrain/bve-data) | 通勤車を含む配布データ一覧 |
+| Source | Contents |
+|--------|----------|
+| [Official download (bvets.net)](https://bvets.net/en/download/) | Main program & official sample trains (Keisei Chiba Line, etc.) |
+| [BVE5 vehicle data list (Players Wiki)](https://wikiwiki.jp/bvets/BVE5%E5%AF%BE%E5%BF%9C%E3%83%87%E3%83%BC%E3%82%BF%E4%B8%80%E8%A6%A7/%E8%BB%8A%E4%B8%A1%E3%83%87%E3%83%BC%E3%82%BF%E4%B8%80%E8%A6%A7%E8%A1%A8) | Comprehensive community index — see the "commuter / suburban EMU" section (easiest to browse) |
+| [Tetsudo homepage](https://tetsudo-1998.jimdofree.com/bve5/%E8%BB%8A%E4%B8%A1%E3%83%87%E3%83%BC%E3%82%BF/) | Osaka Metro commuter trains (Midosuji 10 series, etc.; 7z) |
+| [Chubu Shintoshi Unyu-ku](https://bvetk.arkw.net/download.html) | Vehicle & route data incl. commuter stock |
+| [Yokohama Railway Lab](https://softwarenet.wixsite.com/yktrain/bve-data) | Distribution list incl. commuter stock |
 
-> 3両ちょうどでなくても運転自体は可能です。編成が長い車両でも起動しますが、
-> ホームからのはみ出しや停車位置がずれる場合があります。
+> It doesn't have to be exactly 3 cars — longer sets still run, but may
+> overrun the platform or stop off-mark.
 
-## トラブルシューティング
+## Troubleshooting
 
-| 症状 | 原因 | 対処 |
-|------|------|------|
-| シナリオ一覧に出てこない | シナリオフォルダ未設定 | STEP 2 のオプション設定を確認 |
-| `ファイルが見つかりません …\*.x` | 3Dモデル未配置 | STEP 4（または該当行をコメントアウト） |
-| 起動できない／車両エラー | `Vehicle =` のパス誤り | STEP 3 のパスを再確認 |
-| 文字化けする | 文字コード | 全ファイル UTF-8。UTF-8対応エディタで開く |
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Not shown in scenario list | Scenario folder not set | Re-check Options in STEP 2 |
+| `File not found …\*.x` | 3D models not placed | STEP 4 (or comment the line out) |
+| Won't start / vehicle error | Wrong `Vehicle =` path | Re-check the path in STEP 3 |
+| Garbled text | Encoding | All files are UTF-8; open with a UTF-8 editor |
 
-## フォルダ構成
+## Folder layout
 
 ```
-scenario/                 シナリオ（昼／夜／雨／快速）
+scenario/                 Scenarios (day / night / rain / rapid)
 Shiomi/
 ├── map/
-│   ├── main*.txt         各ダイヤのマップ本体（include で分割）
-│   ├── 00_init.txt       全域初期設定
-│   ├── 10..95_*.txt      風景帯ごとの線形・構造物
-│   ├── signals.txt       閉塞・信号・ATS-Sn 地上子
-│   ├── trains.txt        対向列車
-│   └── env_night/​rain.txt 夜間・雨天の環境オーバーライド
-├── station/              停車場リスト（各停 / 快速）
-├── structure/            ストラクチャーリスト
-├── signal/               信号現示リスト
-├── sound/  sound3d/      サウンドリスト
-└── objects/              3Dモデル・テクスチャ（※本リポジトリには未収録）
+│   ├── main*.txt         Map body per timetable (split with include)
+│   ├── 00_init.txt       Global init
+│   ├── 10..95_*.txt      Alignment & structures per scenery band
+│   ├── signals.txt       Blocks, signals, ATS-Sn beacons
+│   ├── trains.txt        Oncoming trains
+│   └── env_night/rain.txt Night / rain environment overrides
+├── station/              Station lists (local / rapid)
+├── structure/            Structure list
+├── signal/               Signal aspect list
+├── sound/  sound3d/      Sound lists
+└── objects/              3D models & textures (NOT included in this repo)
 ```
 
-### マップの設計方針
+### Map design notes
 
-- 風景帯ごとに `include` 分割し、`main.txt` が読み込み順を束ねます。
-- 夜・雨は既存の昼マップを流用し、`env_night.txt` / `env_rain.txt` を
-  **最後に include** して同一距離程の光源・背景・霧を上書きする方式です
-  （線形・構造物は一切複製しません）。
-- 快速は停車場リストのみ差し替え（`main_rapid.txt`）で実現しています。
+- Split per scenery band with `include`; `main.txt` binds the load order.
+- Night/rain reuse the day map unchanged: `env_night.txt` / `env_rain.txt` are
+  **included last** to override lighting/background/fog at the same distances
+  (no geometry or structures are duplicated).
+- Rapid is achieved by swapping only the station list (`main_rapid.txt`).
 
-## 素材について
+## Assets
 
-`Shiomi/objects/` 配下の 3Dモデル(.x) とテクスチャ、および車両データは
-本リポジトリには含めていません（配布パッケージに同梱、または各配布元から
-入手してください）。ストラクチャーリストのパスに合わせて配置します。
-出所は `Shiomi/objects/CREDITS.txt` を参照してください。
+The 3D models (.x) and textures under `Shiomi/objects/`, and the train data,
+are not included in this repo (bundle them in a release package or obtain them
+from each distributor). Place them to match the paths in the structure list.
+See `Shiomi/objects/CREDITS.txt` for provenance.
 
-## ライセンス
+## Licence
 
-当方オリジナル部分は **CC BY-NC 4.0**。流用素材は各配布元の規約に従います。
+Original work is under **CC BY-NC 4.0**. Third-party assets follow their
+respective distributors' terms.
 
 ---
 
-*このデータはフィクションです。路線名・社名・駅名・地名はすべて架空のものです。*
+*This is a work of fiction. The line, company, station and place names are all imaginary.*
