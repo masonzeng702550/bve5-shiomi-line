@@ -1,0 +1,62 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑥ 桜並木・住宅  8.5 - 12.5 km
+#  郊外の住宅地。沿線の桜並木を S字で縫う。踏切 ×4。
+# ================================================================
+8500;
+  Background.Change('bg_rural_day');
+  SpeedLimit.Begin(95);
+  Gradient.BeginTransition();
+8550;
+  Gradient.Begin(-3);
+
+  # --- 軌道・柵・桜並木・住宅 ---
+  Repeater['rail6'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['fence'].Begin('0', 4.5, 0, 0, 0, 0, 0, 1, 10, 10, 'rural_fence');
+  Repeater['sakura_l'].Begin('0', -6, 0, 0, 0, 0, 0, 1, 18, 18, 'sakura_tree');
+  Repeater['sakura_r'].Begin('0',  6, 0, 0, 0, 180, 0, 1, 18, 18, 'sakura_tree');
+  Repeater['house_l'].Begin('0', -16, 0, 0, 0, 0, 0, 0, 35, 35, 'rural_house_a', 'rural_house_b', 'rural_house_c');
+  Repeater['house_r'].Begin('0',  16, 0, 0, 0, 180, 0, 0, 40, 40, 'rural_house_c', 'rural_house_a', 'rural_house_b');
+
+9000;
+  Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切1
+  Sound3D['crossing'].Put(0, 1);
+9500;
+  Gradient.BeginTransition();
+9550;
+  Gradient.Begin(2);
+10200;
+  Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切2
+
+10900;
+  # --- 桜ヶ丘駅 ---
+  Structure['rural_stn_sakuragaoka'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['sakuragaoka'].Put(-1, -5, 5);
+  Structure['rural_school'].Put('0', 30, 0, 60, 0, -30, 0, 0, 0);
+
+11400;
+  Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切3
+11600;
+  # --- 桜並木の S字カーブ ---
+  Curve.BeginTransition();
+11650;
+  Curve.Begin(-500, 0.035);
+11850;
+  Curve.BeginTransition();
+11900;
+  Curve.Begin(500, 0.035);
+12100;
+  Curve.BeginTransition();
+12150;
+  Curve.End();
+12300;
+  Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切4
+
+12500;
+  # 帯⑦へ。住宅・桜終了。
+  Repeater['sakura_l'].End();
+  Repeater['sakura_r'].End();
+  Repeater['house_l'].End();
+  Repeater['house_r'].End();
+  Repeater['fence'].End();

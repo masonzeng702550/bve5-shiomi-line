@@ -1,0 +1,55 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑧ 里山・杉林  16.5 - 20.0 km
+#  丘陵地へ。杉木立の木漏れ日、茶畑、鎮守の鳥居。杉本駅。
+# ================================================================
+16500;
+  Background.Change('bg_mountain_day');
+  SpeedLimit.Begin(75);
+  DrawDistance.Change(500);
+  Gradient.BeginTransition();
+16550;
+  Gradient.Begin(10);         # +10‰ 里山へ
+
+  # --- 切通し・杉林・茶畑 ---
+  Repeater['rail8'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['cut_l'].Begin('0', -8, 0, 0, 0, 0, 0, 0, 25, 25, 'mtn_cutting');
+  Repeater['cut_r'].Begin('0',  8, 0, 0, 0, 180, 0, 0, 25, 25, 'mtn_cutting');
+  Repeater['cedar_l'].Begin('0', -12, 0, 0, 0, 0, 0, 0, 12, 12, 'mtn_cedar');
+  Repeater['cedar_r'].Begin('0',  12, 0, 0, 0, 180, 0, 0, 12, 12, 'mtn_cedar');
+  Sound3D['cicada'].Put(8, 4);
+
+17000;
+  Structure['mtn_teafield'].Put('0', -25, -2, 0, 0, 10, 0, 0, 0);
+  Curve.BeginTransition();
+17050;
+  Curve.Begin(-300, 0.055);
+17400;
+  Curve.BeginTransition();
+17450;
+  Curve.End();
+
+17600;
+  # --- 杉本駅 ---
+  Structure['mtn_stn_sugimoto'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['sugimoto'].Put(-1, -5, 5);
+
+18000;
+  Gradient.BeginTransition();
+18050;
+  Gradient.Begin(18);         # +18‰ 勾配を強める
+  # --- 鎮守の森・鳥居と石段 ---
+  Structure['mtn_torii'].Put('0', 18, 0, 0, 0, -90, 0, 0, 0);
+  Structure['mtn_shrine'].Put('0', 45, 6, 30, 0, -110, 0, 0, 0);
+
+18800;
+  Structure['mtn_teafield'].Put('0', 28, 0, 0, 0, -160, 0, 0, 0);
+
+20000;
+  # 帯⑨へ。里山終了。
+  Repeater['cedar_l'].End();
+  Repeater['cedar_r'].End();
+  Repeater['cut_l'].End();
+  Repeater['cut_r'].End();
+  SpeedLimit.End();

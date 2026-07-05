@@ -1,0 +1,45 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑦ 田園・水田  12.5 - 16.5 km
+#  一面の水田。空を映す水鏡と遠い山なみ。交換駅・田原。
+# ================================================================
+12500;
+  Gradient.BeginTransition();
+12550;
+  Gradient.Begin(0);
+
+  # --- 築堤・水田・農家・遠景の山 ---
+  Repeater['embank'].Begin('0', 0, -0.8, 0, 0, 0, 0, 1, 25, 25, 'rural_embank');
+  Repeater['paddy_l'].Begin('0', -50, -1.2, 0, 0, 0, 0, 0, 100, 100, 'paddy_plane');
+  Repeater['paddy_r'].Begin('0',  50, -1.2, 0, 0, 180, 0, 0, 100, 100, 'paddy_plane');
+  Repeater['mtn_bg'].Begin('0', -200, 0, 0, 0, 0, 0, 0, 200, 200, 'rural_mtn_bg');
+  Sound3D['cicada'].Put(10, 3);
+
+13000;
+  Structure['rural_farmhouse'].Put('0', -35, -1, 0, 0, 20, 0, 0, 0);
+  Structure['rural_scarecrow'].Put('0', -18, -1, 30, 0, 0, 0, 0, 0);
+13600;
+  Gradient.BeginTransition();
+13650;
+  Gradient.Begin(2);
+14000;
+  Structure['rural_farmhouse'].Put('0', 40, -1, 0, 0, -150, 0, 0, 0);
+
+14200;
+  # --- 交換駅・田原（3本目の交換）---
+  Track['up'].X.Interpolate(4.0, 0);
+  Structure['rural_stn_tawara'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['tawara'].Put(-1, -5, 5);
+  Track['up'].X.Interpolate(0, 0);
+
+15200;
+  Structure['rural_scarecrow'].Put('0', 22, -1, 0, 0, 45, 0, 0, 0);
+
+16500;
+  # 帯⑧へ。田園終了。
+  Repeater['paddy_l'].End();
+  Repeater['paddy_r'].End();
+  Repeater['embank'].End();
+  Repeater['mtn_bg'].End();
+  SpeedLimit.End();

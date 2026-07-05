@@ -1,0 +1,72 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑩ 霧の温泉街  24.0 - 27.4 km
+#  霧が濃くなり湯煙の立つ温泉街へ。終着・霧山温泉（頭端式）。
+# ================================================================
+24000;
+  Background.Change('bg_onsen_day');
+  SpeedLimit.Begin(65);
+  Gradient.Begin(15);
+
+  # --- 軌道・沿線の旅館 ---
+  Repeater['rail10'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['ryokan_l'].Begin('0', -14, 0, 0, 0, 0, 0, 0, 30, 30, 'onsen_ryokan_a', 'onsen_ryokan_b', 'onsen_ryokan_c');
+  Repeater['ryokan_r'].Begin('0',  14, 0, 0, 0, 180, 0, 0, 32, 32, 'onsen_ryokan_c', 'onsen_ryokan_a');
+  Sound3D['onsen_town'].Put(0, 3);
+
+24000;
+  Fog.Interpolate(0.0001, 0.75, 0.83, 0.94);
+
+24600;
+  # --- 霧山駅（山中の小駅）。ここから霧が濃くなる ---
+  Structure['mtn_stn_kiriyama'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['kiriyama'].Put(-1, -5, 5);
+  Fog.Interpolate(0.004, 0.82, 0.84, 0.88);
+  Structure['onsen_steam'].Put('0', -18, 0, 20, 0, 0, 0, 0, 0);   # 湯煙
+
+25200;
+  Structure['onsen_shrine'].Put('0', 20, 3, 0, 0, -90, 0, 0, 0);
+  Structure['onsen_steam'].Put('0', 16, 0, 40, 0, 0, 0, 0, 0);
+
+26000;
+  Structure['onsen_ashiyu'].Put('0', -10, 0, 0, 0, 30, 0, 0, 0);   # 足湯
+  Structure['onsen_steam'].Put('0', -12, 0, 0, 0, 0, 0, 0, 0);
+
+26500;
+  # 霧が最も濃い。描画距離を絞り効率と演出を両立
+  Fog.Interpolate(0.008, 0.85, 0.86, 0.88);
+  DrawDistance.Change(400);
+  Gradient.BeginTransition();
+26550;
+  Gradient.Begin(3);
+
+26800;
+  SpeedLimit.End();
+  SpeedLimit.Begin(35);       # 終点進入 35km/h
+
+27100;
+  # --- 終点進入カーブ（旅館街の眺めが開ける）---
+  Curve.BeginTransition();
+27140;
+  Curve.Begin(-200, 0.040);
+  Gradient.BeginTransition();
+27160;
+  Gradient.Begin(0);
+
+27300;
+  Curve.BeginTransition();
+27340;
+  Curve.End();
+
+27400;
+  # --- 終着・霧山温泉（頭端式 1面2線）---
+  Structure['onsen_stn_terminal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['kiriyamaonsen'].Put(1, -5, 5);   # 終点は右側扉
+  Repeater['ryokan_l'].End();
+  Repeater['ryokan_r'].End();
+  Repeater['rail10'].End();
+  SpeedLimit.End();
+
+27410;
+  Structure['onsen_buffer'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 車止め

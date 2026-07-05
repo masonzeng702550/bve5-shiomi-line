@@ -1,0 +1,143 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑨ 渓谷・トンネル  20.0 - 24.0 km
+#  本路線の白眉。33‰連続勾配、5本のトンネルと3つの鋼橋、
+#  R160の九十九折で渓流を遡る。交換駅・渓谷口。
+#  トンネル: 1)280m 2)190m 3)610m 4)150m 5)330m
+# ================================================================
+20000;
+  DrawDistance.Change(500);
+  Gradient.BeginTransition();
+20030;
+  Gradient.Begin(33);         # +33‰ 最急勾配
+
+  # --- 渓谷の岩壁・渓流 ---
+  Repeater['rail9'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['rock'].Begin('0', 9, -3, 0, 0, 0, 0, 0, 20, 20, 'mtn_rock_wall');
+  Repeater['stream'].Begin('0', -14, -8, 0, 0, 0, 0, 0, 40, 40, 'mtn_stream');
+  Sound3D['river'].Put(-12, -6);
+
+# --- トンネル1 (280m) ---
+20050;
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Repeater['tun1'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
+  RollingNoise.Change(1);
+  Gradient.BeginTransition();
+20080;
+  Gradient.Begin(25);         # トンネル内は 25‰
+  Curve.BeginTransition();
+20120;
+  Curve.Begin(-180, 0.095);
+20330;
+  Repeater['tun1'].End();
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 180, 0, 0, 0);
+  RollingNoise.Change(0);
+  Gradient.BeginTransition();
+20360;
+  Gradient.Begin(33);
+
+# --- 鋼橋1（渓流を渡る）---
+20400;
+  Structure['mtn_steel_bridge'].Put('0', 0, -1, 0, 0, 0, 0, 0, 0);
+  Structure['mtn_waterfall'].Put('0', -25, -4, 20, 0, 20, 0, 0, 0);
+  Sound3D['waterfall'].Put(-20, -2);
+20460;
+  Curve.BeginTransition();
+20500;
+  Curve.Begin(200, 0.085);
+
+# --- トンネル2 (190m) ---
+20550;
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Repeater['tun2'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
+  RollingNoise.Change(1);
+20740;
+  Repeater['tun2'].End();
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 180, 0, 0, 0);
+  RollingNoise.Change(0);
+  Curve.BeginTransition();
+20790;
+  Curve.End();
+
+21000;
+  # --- 交換駅・渓谷口（渓流沿いの小駅）---
+  Track['up'].X.Interpolate(4.0, 0);
+  Structure['mtn_stn_keikokuguchi'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['keikokuguchi'].Put(-1, -5, 5);
+  Structure['mtn_suspension'].Put('0', -30, 4, 40, 0, 0, 0, 0, 0);   # 遠景の吊橋
+  Track['up'].X.Interpolate(0, 0);
+
+# --- トンネル3 (610m・最長) ---
+21200;
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Repeater['tun3'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
+  RollingNoise.Change(1);
+  Gradient.BeginTransition();
+21230;
+  Gradient.Begin(25);
+  Curve.BeginTransition();
+21280;
+  Curve.Begin(-160, 0.105);   # R160・最急カーブ（トンネル内）cant105mm
+21600;
+  Curve.BeginTransition();
+21650;
+  Curve.Begin(160, 0.105);
+21810;
+  Repeater['tun3'].End();
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 180, 0, 0, 0);
+  RollingNoise.Change(0);
+  Curve.BeginTransition();
+21850;
+  Curve.End();
+  Gradient.BeginTransition();
+21870;
+  Gradient.Begin(33);
+
+# --- 鋼橋2 ---
+21900;
+  Structure['mtn_steel_bridge'].Put('0', 0, -1, 0, 0, 0, 0, 0, 0);
+  Sound3D['river'].Put(0, -6);
+
+# --- トンネル4 (150m) ---
+22100;
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Repeater['tun4'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
+  RollingNoise.Change(1);
+22250;
+  Repeater['tun4'].End();
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 180, 0, 0, 0);
+  RollingNoise.Change(0);
+
+# --- 鋼橋3 ---
+22350;
+  Structure['mtn_steel_bridge'].Put('0', 0, -1, 0, 0, 0, 0, 0, 0);
+  Structure['mtn_waterfall'].Put('0', 22, -4, 10, 0, -20, 0, 0, 0);
+  Sound3D['waterfall'].Put(18, -2);
+22430;
+  Curve.BeginTransition();
+22470;
+  Curve.Begin(-220, 0.080);
+
+# --- トンネル5 (330m) ---
+22600;
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Repeater['tun5'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
+  RollingNoise.Change(1);
+22930;
+  Repeater['tun5'].End();
+  Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 180, 0, 0, 0);
+  RollingNoise.Change(0);
+  Curve.BeginTransition();
+22980;
+  Curve.End();
+
+23400;
+  Gradient.BeginTransition();
+23450;
+  Gradient.Begin(15);
+
+24000;
+  # 帯⑩へ。渓谷造形終了。
+  Repeater['rock'].End();
+  Repeater['stream'].End();
