@@ -1,0 +1,10 @@
+BveTs Sound3D List 2.00:utf-8
+
+# key, ファイルパス   （3D空間に定位する環境音・ループ）
+waves,      ..\objects\coast\sound\sea_waves.wav
+gulls,      ..\objects\coast\sound\seagulls.wav
+river,      ..\objects\common\sound\river_flow.wav
+waterfall,  ..\objects\mountain\sound\waterfall.wav
+cicada,     ..\objects\rural\sound\cicada.wav
+crossing,   ..\objects\common\sound\crossing_bell.wav
+onsen_town, ..\objects\onsen\sound\town_ambience.wav

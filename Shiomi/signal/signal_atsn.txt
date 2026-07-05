@@ -1,0 +1,13 @@
+BveTs Signal Aspects List 2.00:utf-8
+
+# 4現示 自動閉塞（単線）
+# index, 現示画像(明), 現示画像(暗)
+# 0 = R  (停止)
+# 1 = YY (警戒 25)
+# 2 = Y  (注意 45)
+# 3 = G  (進行)
+
+0, ..\objects\common\sig\sig_r.png,  ..\objects\common\sig\sig_r_n.png
+1, ..\objects\common\sig\sig_yy.png, ..\objects\common\sig\sig_yy_n.png
+2, ..\objects\common\sig\sig_y.png,  ..\objects\common\sig\sig_y_n.png
+3, ..\objects\common\sig\sig_g.png,  ..\objects\common\sig\sig_g_n.png

@@ -1,0 +1,109 @@
+BveTs Structure List 2.00:utf-8
+
+# key, モデルファイル(.x)
+# ================================================================
+#  汐見線 ストラクチャーリスト
+#  命名規約: 帯_カテゴリ_名 (snake_case)
+# ================================================================
+
+# ---- 共通・軌道系 (common) ----
+rail_slab,          ..\objects\common\track\rail_slab.x
+rail_ballast,       ..\objects\common\track\rail_ballast.x
+rail_bridge,        ..\objects\common\track\rail_bridge_deck.x
+sleeper,            ..\objects\common\track\sleeper.x
+catenary_pole,      ..\objects\common\track\catenary_pole.x
+kilo_post,          ..\objects\common\track\kilo_post.x
+crossing,           ..\objects\common\track\level_crossing.x
+
+# ---- 帯① 海辺の都市 (city) ----
+city_station_shiomihama, ..\objects\city\stn_shiomihama.x
+city_footbridge,    ..\objects\city\footbridge.x
+city_port_crane,    ..\objects\city\port_crane.x
+city_bldg_a,        ..\objects\city\bldg_office_a.x
+city_bldg_b,        ..\objects\city\bldg_office_b.x
+city_bldg_c,        ..\objects\city\bldg_mansion_c.x
+city_billboard,     ..\objects\city\billboard.x
+city_platform,      ..\objects\city\platform_island.x
+
+# ---- 帯② 海岸線 (coast) ----
+coast_seawall_a,    ..\objects\coast\seawall.x
+coast_sea_plane,    ..\objects\coast\sea_plane.x
+coast_cliff,        ..\objects\coast\cliff.x
+coast_lighthouse,   ..\objects\coast\lighthouse.x
+coast_boat,         ..\objects\coast\fishing_boat.x
+coast_tetrapod,     ..\objects\coast\tetrapod.x
+coast_stn_todaishita, ..\objects\coast\stn_todaishita.x
+
+# ---- 帯③ 市街高架 (city) ----
+elev_viaduct,       ..\objects\city\viaduct_deck.x
+elev_pier,          ..\objects\city\viaduct_pier.x
+elev_stn_shiomishi, ..\objects\city\stn_shiomishi_elev.x
+city_shop_a,        ..\objects\city\shop_a.x
+city_shop_b,        ..\objects\city\shop_b.x
+
+# ---- 帯④ 地下 (city) ----
+ug_tunnel,          ..\objects\city\ug_box_tunnel.x
+ug_light,           ..\objects\city\ug_ceiling_light.x
+ug_stn_chuodori,    ..\objects\city\stn_chuodori_ug.x
+ug_ad_panel,        ..\objects\city\ug_ad_panel.x
+
+# ---- 帯⑤ 大鉄橋 (common/city) ----
+br_truss_through,   ..\objects\common\bridge\truss_through.x
+br_plate_deck,      ..\objects\common\bridge\plate_girder.x
+br_pier_river,      ..\objects\common\bridge\river_pier.x
+br_river_plane,     ..\objects\common\bridge\river_plane.x
+br_embankment,      ..\objects\common\bridge\embankment.x
+br_stn_okawabashi,  ..\objects\common\bridge\stn_okawabashi.x
+
+# ---- 帯⑥ 桜並木・住宅 (rural) ----
+sakura_tree,        ..\objects\rural\sakura_full.x
+rural_house_a,      ..\objects\rural\house_a.x
+rural_house_b,      ..\objects\rural\house_b.x
+rural_house_c,      ..\objects\rural\house_c.x
+rural_school,       ..\objects\rural\school.x
+rural_fence,        ..\objects\rural\fence.x
+rural_stn_sakuragaoka, ..\objects\rural\stn_sakuragaoka.x
+
+# ---- 帯⑦ 田園・水田 (rural) ----
+paddy_plane,        ..\objects\rural\paddy_plane.x
+rural_farmhouse,    ..\objects\rural\farmhouse.x
+rural_embank,       ..\objects\rural\embankment.x
+rural_scarecrow,    ..\objects\rural\scarecrow.x
+rural_mtn_bg,       ..\objects\rural\distant_mountain.x
+rural_stn_tawara,   ..\objects\rural\stn_tawara.x
+
+# ---- 帯⑧ 里山・杉林 (mountain) ----
+mtn_cedar,          ..\objects\mountain\cedar.x
+mtn_teafield,       ..\objects\mountain\tea_field.x
+mtn_torii,          ..\objects\mountain\torii.x
+mtn_shrine,         ..\objects\mountain\shrine.x
+mtn_cutting,        ..\objects\mountain\cutting_wall.x
+mtn_stn_sugimoto,   ..\objects\mountain\stn_sugimoto.x
+
+# ---- 帯⑨ 渓谷・トンネル (mountain) ----
+mtn_tunnel_portal,  ..\objects\mountain\tunnel_portal.x
+mtn_tunnel_seg,     ..\objects\mountain\tunnel_segment.x
+mtn_steel_bridge,   ..\objects\mountain\steel_bridge.x
+mtn_rock_wall,      ..\objects\mountain\rock_wall.x
+mtn_stream,         ..\objects\mountain\mountain_stream.x
+mtn_waterfall,      ..\objects\mountain\waterfall.x
+mtn_suspension,     ..\objects\mountain\suspension_bridge.x
+mtn_stn_keikokuguchi, ..\objects\mountain\stn_keikokuguchi.x
+mtn_stn_kiriyama,   ..\objects\mountain\stn_kiriyama.x
+
+# ---- 帯⑩ 温泉街 (onsen) ----
+onsen_ryokan_a,     ..\objects\onsen\ryokan_a.x
+onsen_ryokan_b,     ..\objects\onsen\ryokan_b.x
+onsen_ryokan_c,     ..\objects\onsen\ryokan_c.x
+onsen_steam,        ..\objects\onsen\steam_plume.x
+onsen_shrine,       ..\objects\onsen\onsen_shrine.x
+onsen_ashiyu,       ..\objects\onsen\footbath.x
+onsen_stn_terminal, ..\objects\onsen\stn_kiriyamaonsen.x
+onsen_buffer,       ..\objects\onsen\buffer_stop.x
+
+# ---- 背景 (Background.Change 用) ----
+bg_sea_day,         ..\objects\common\bg\bg_sea_day.x
+bg_city_day,        ..\objects\common\bg\bg_city_day.x
+bg_rural_day,       ..\objects\common\bg\bg_rural_day.x
+bg_mountain_day,    ..\objects\common\bg\bg_mountain_day.x
+bg_onsen_day,       ..\objects\common\bg\bg_onsen_day.x
