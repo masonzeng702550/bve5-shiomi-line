@@ -1,0 +1,23 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  対向列車（交換）
+#  交換駅（灯台下・大川橋・田原）で上り列車と行き違う。
+#  対向線 Track['up'] 上を逆方向(-1)に走らせる。
+# ================================================================
+
+# ---- 交換1: 灯台下（10:06 頃）----
+0;
+  Train['oncoming1'].Load('..\..\vehicle\generic_3car\vehicle.txt', 'up', -1);
+  Train['oncoming1'].Enable(10:05:50);
+
+# ---- 交換2: 大川橋（10:15 頃）----
+  Train['oncoming2'].Load('..\..\vehicle\generic_3car\vehicle.txt', 'up', -1);
+  Train['oncoming2'].Enable(10:15:10);
+
+# ---- 交換3: 田原（10:24 頃・当駅で行き違い停車）----
+  Train['oncoming3'].Load('..\..\vehicle\generic_3car\vehicle.txt', 'up', -1);
+  Train['oncoming3'].Enable(10:23:40);
+
+# 対向線の敷設（各交換駅前後で本線から 4.0m 側方へ分岐）は
+# 各風景帯 include 内の Track['up'].X.Interpolate で定義済み。
