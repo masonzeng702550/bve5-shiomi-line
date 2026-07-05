@@ -1,0 +1,36 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  汐見湾鉄道 汐見線  メインマップ
+#  汐見浜 (0.0km) → 霧山温泉 (27.4km)
+#  風景帯ごとに include で分割。数値の単位はメートル。
+# ================================================================
+
+# ---- 全域変数 ----
+$Gauge = 1.067;
+
+# ---- リソース読込 ----
+Structure.Load('..\structure\structures.txt');
+Station.Load('..\station\stations.txt');
+Signal.Load('..\signal\signal_atsn.txt');
+Sound.Load('..\sound\sounds.txt');
+Sound3D.Load('..\sound3d\sounds3d.txt');
+
+# ---- 初期設定 ----
+include '00_init.txt';
+
+# ---- 風景帯 ----
+include '10_seaside_city.txt';   # ① 0.0 - 1.0   海辺の都市
+include '20_coast.txt';          # ② 1.0 - 3.8   海岸線
+include '30_elevated.txt';       # ③ 3.8 - 5.8   市街高架
+include '40_underground.txt';    # ④ 5.8 - 7.0   地下
+include '50_bridge.txt';         # ⑤ 7.0 - 8.5   大鉄橋
+include '60_sakura.txt';         # ⑥ 8.5 - 12.5  桜並木・住宅
+include '70_paddy.txt';          # ⑦ 12.5 - 16.5 田園・水田
+include '80_satoyama.txt';       # ⑧ 16.5 - 20.0 里山・杉林
+include '90_gorge.txt';          # ⑨ 20.0 - 24.0 渓谷・トンネル
+include '95_onsen.txt';          # ⑩ 24.0 - 27.4 霧の温泉街
+
+# ---- 保安・列車 ----
+include 'signals.txt';           # 閉塞・信号・地上子
+include 'trains.txt';            # 対向列車
