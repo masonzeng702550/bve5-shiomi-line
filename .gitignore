@@ -1,0 +1,21 @@
+# --- 內部規劃文件，不公開 ---
+PRD.md
+SPEC.md
+
+# --- 暫存 / 作業檔 ---
+scratchpad/
+*.tmp
+*.bak
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- 編輯器 ---
+.vscode/
+.idea/
+*.swp
+
+# --- BVE 產生物 / 大型二進位（另行以 release 發佈）---
+*.zip
