@@ -1,0 +1,33 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  汐見線 メインマップ（夜行ダイヤ）
+#  昼マップと同一の線形・構造物を用い、最後に env_night.txt で
+#  光源・背景・霧を夜景へ上書きする。
+# ================================================================
+$Gauge = 1.067;
+
+Structure.Load('..\structure\structures.txt');
+Station.Load('..\station\stations.txt');
+Signal.Load('..\signal\signal_atsn.txt');
+Sound.Load('..\sound\sounds.txt');
+Sound3D.Load('..\sound3d\sounds3d.txt');
+
+include '00_init.txt';
+
+include '10_seaside_city.txt';
+include '20_coast.txt';
+include '30_elevated.txt';
+include '40_underground.txt';
+include '50_bridge.txt';
+include '60_sakura.txt';
+include '70_paddy.txt';
+include '80_satoyama.txt';
+include '90_gorge.txt';
+include '95_onsen.txt';
+
+include 'signals.txt';
+include 'trains.txt';
+
+# ---- 夜景オーバーライド（必ず最後）----
+include 'env_night.txt';

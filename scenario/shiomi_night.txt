@@ -1,0 +1,15 @@
+BveTs Scenario 2.00:utf-8
+
+# ================================================================
+#  汐見線 普通 霧山温泉行 （夜）
+# ================================================================
+
+Route    = ..\Shiomi\map\main_night.txt
+Vehicle  = ..\..\vehicle\generic_3car\vehicle.txt
+
+Title        = 汐見線 普通 霧山温泉行（夜）
+RouteTitle   = 汐見湾鉄道 汐見線
+VehicleTitle = 通勤形 3両編成
+Author       = (作者名)
+Comment      = 夜の海岸線から灯りの温泉街へ。月明かりと車内灯だけが頼りの夜行ダイヤ。
+Image        = thumbnail_night.png

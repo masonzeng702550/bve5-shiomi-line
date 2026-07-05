@@ -1,0 +1,37 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  夜間環境オーバーライド（main_night.txt から最後に include）
+#  昼マップの Light / Fog / Background / DrawDistance を、
+#  同一距離程で後から上書きして夜景に置き換える。
+#  ※ include 順が最後なので、同距離では本ファイルの指定が優先される。
+# ================================================================
+0;
+  # --- 月明かりの弱い光源 ---
+  Light.Ambient(0.12, 0.12, 0.20);
+  Light.Diffuse(0.16, 0.16, 0.24);
+  Light.Direction(65, 130);          # 高い位置の月
+  CabIlluminance.Interpolate(0.9);   # 夜は運転台を明るく
+  Fog.Interpolate(0.0003, 0.05, 0.06, 0.12);
+  DrawDistance.Change(600);
+  Background.Change('bg_city_night');
+
+# --- 各シーン境界で夜背景へ差し替え ---
+1000;  Background.Change('bg_sea_night');
+3800;  Background.Change('bg_city_night');
+
+# 地下区間(5.85-7.0km)は昼夜共通の暗がりのため触れない。
+7000;
+  Background.Change('bg_rural_night');
+  Fog.Interpolate(0.0003, 0.05, 0.06, 0.12);   # トンネル後に夜霧を復帰
+
+8500;  Background.Change('bg_rural_night');
+16500;
+  Background.Change('bg_mountain_night');
+  DrawDistance.Change(450);
+
+24000; Background.Change('bg_onsen_night');
+24600; Fog.Interpolate(0.006, 0.08, 0.09, 0.12);    # 夜の温泉街はより濃い霧
+26500;
+  Fog.Interpolate(0.012, 0.10, 0.10, 0.13);
+  DrawDistance.Change(350);
