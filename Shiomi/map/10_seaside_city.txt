@@ -1,0 +1,32 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ① 海辺の都市  0.0 - 1.0 km
+#  始発駅・汐見浜。港湾都市のスカイライン。
+# ================================================================
+0;
+  Background.Change('bg_city_day');
+  Gradient.Begin(0);
+
+  # --- 起点駅ホーム（2面3線）---
+  Structure['city_station_shiomihama'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['city_platform'].Put('0', 0, 0, 0, 0, 0, 0, 1, 70);
+  Station['shiomihama'].Put(-1, -5, 5);
+
+  # --- 軌道・架線 ---
+  Repeater['rail'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_slab');
+  Repeater['cate'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 40, 40, 'catenary_pole');
+  Structure['city_footbridge'].Put('0', 0, 6.5, 0, 0, 0, 0, 0, 0);
+
+100;
+  Structure['city_port_crane'].Put('0', -45, 0, 0, 0, 20, 0, 0, 0);
+  Repeater['bldg_l'].Begin('0', -28, 0, 0, 0, 0, 0, 1, 60, 60, 'city_bldg_a', 'city_bldg_b', 'city_bldg_c');
+  Repeater['bldg_r'].Begin('0',  26, 0, 0, 0, 180, 0, 1, 55, 55, 'city_bldg_b', 'city_bldg_c', 'city_bldg_a');
+
+300;
+  Structure['city_billboard'].Put('0', 20, 12, 0, 0, -90, 0, 0, 0);
+
+1000;
+  # 帯②へ引き継ぎ。ビル列を終了。
+  Repeater['bldg_l'].End();
+  Repeater['bldg_r'].End();

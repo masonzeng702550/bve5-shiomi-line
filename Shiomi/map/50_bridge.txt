@@ -1,0 +1,46 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ⑤ 大鉄橋  7.0 - 8.5 km
+#  大川を渡るトラス橋。橋上は直線。北岸に交換駅・大川橋。
+# ================================================================
+7000;
+  Background.Change('bg_rural_day');
+  Gradient.BeginTransition();
+7050;
+  Gradient.Begin(0);          # 橋の高さで水平
+
+7400;
+  # --- 河川・堤防・鉄橋アプローチ ---
+  Repeater['river'].Begin('0', 0, -14, 0, 0, 0, 0, 0, 100, 100, 'br_river_plane');
+  Structure['br_embankment'].Put('0', 0, -2, 0, 0, 0, 0, 0, 0);
+  Sound3D['river'].Put(0, -10);
+
+7500;
+  # --- 上路プレートガーダー ×4（アプローチ側）---
+  Repeater['gird'].Begin('0', 0, -1.2, 0, 0, 0, 0, 1, 20, 20, 'br_plate_deck');
+  Repeater['rail_br'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_bridge');
+  RollingNoise.Change(2);     # 鉄橋走行音（轟音）
+
+7800;
+  # --- 下路トラス橋 ×2（主径間・大川本流）---
+  Structure['br_truss_through'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['br_pier_river'].Put('0', 0, -14, 0, 0, 0, 0, 0, 0);
+7900;
+  # 主径間中央（展望点・橋上は直線）
+  Structure['br_pier_river'].Put('0', 0, -14, 60, 0, 0, 0, 0, 0);
+8000;
+  Structure['br_truss_through'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+
+8300;
+  Repeater['gird'].End();
+  RollingNoise.Change(0);     # 明かり区間の走行音へ戻す
+
+8500;
+  # --- 北岸・交換駅・大川橋 ---
+  Track['up'].X.Interpolate(4.0, 0);
+  Structure['br_stn_okawabashi'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['okawabashi'].Put(-1, -5, 5);
+  Repeater['river'].End();
+  Repeater['rail_br'].End();
+  Track['up'].X.Interpolate(0, 0);

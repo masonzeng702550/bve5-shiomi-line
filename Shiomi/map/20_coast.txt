@@ -1,0 +1,68 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ② 海岸線  1.0 - 3.8 km
+#  防波堤に沿って太平洋を望む。灯台と交換駅・灯台下。
+# ================================================================
+1000;
+  Background.Change('bg_sea_day');
+  SpeedLimit.Begin(85);
+  Gradient.BeginTransition();
+1050;
+  Gradient.Begin(2);          # 海岸線をわずかに上る +2‰
+
+  # --- 海側の造形（護岸・海面・テトラポッド）---
+  Repeater['seawall'].Begin('0', -3.5, 0, 0, 0, 0, 0, 1, 20, 20, 'coast_seawall_a');
+  Repeater['sea'].Begin('0', -60, -2, 0, 0, 0, 0, 0, 100, 100, 'coast_sea_plane');
+  Repeater['tetra'].Begin('0', -8, -1.5, 0, 0, 0, 0, 0, 30, 30, 'coast_tetrapod');
+  Repeater['cliff'].Begin('0', 18, 0, 0, 0, 0, 0, 0, 40, 40, 'coast_cliff');
+  Sound3D['waves'].Put(-15, 2);
+  Sound3D['gulls'].Put(-20, 8);
+
+1150;
+  Curve.BeginTransition();
+1190;
+  Curve.Begin(400, 0.045);    # R400 右カーブ（海岸へ転じる） cant45mm
+
+1400;
+  Station['minatokoen'].Put(-1, -5, 5);
+  Structure['coast_boat'].Put('0', -55, -1.5, 0, 0, 15, 0, 0, 0);
+
+1600;
+  Curve.BeginTransition();
+1660;
+  Curve.End();
+
+2300;
+  Curve.BeginTransition();
+2360;
+  Curve.Begin(-300, 0.060);   # R300 左カーブ・港を望む展望点 cant60mm
+  Structure['coast_boat'].Put('0', -70, -1.5, 0, 0, -10, 0, 0, 0);
+
+2700;
+  Curve.BeginTransition();
+2760;
+  Curve.End();
+
+3000;
+  Structure['coast_lighthouse'].Put('0', -35, 8, 0, 0, 15, 0, 0, 0);
+
+3200;
+  # --- 交換駅・灯台下（副本線を敷設）---
+  Track['up'].X.Interpolate(4.0, 0);
+  Structure['coast_stn_todaishita'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['todaishita'].Put(-1, -5, 5);
+
+3600;
+  Gradient.BeginTransition();
+3650;
+  Gradient.Begin(0);
+
+3800;
+  # 帯③へ。海側造形終了。
+  Repeater['seawall'].End();
+  Repeater['sea'].End();
+  Repeater['tetra'].End();
+  Repeater['cliff'].End();
+  SpeedLimit.End();
+  Track['up'].X.Interpolate(0, 0);

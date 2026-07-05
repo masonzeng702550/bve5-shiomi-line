@@ -1,0 +1,52 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ③ 市街高架  3.8 - 5.8 km
+#  高架に駆け上がり市街を俯瞰。高架駅・汐見市（複線区間）。
+# ================================================================
+3800;
+  Background.Change('bg_city_day');
+  SpeedLimit.Begin(70);
+  Gradient.BeginTransition();
+3850;
+  Gradient.Begin(25);         # +25‰ 高架へ駆け上がる
+
+  # --- 高架橋・橋脚 ---
+  Repeater['viaduct'].Begin('0', 0, -1.0, 0, 0, 0, 0, 1, 20, 20, 'elev_viaduct');
+  Repeater['pier'].Begin('0', 0, -6.0, 0, 0, 0, 0, 0, 20, 20, 'elev_pier');
+  Repeater['rail3'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_slab');
+
+4000;
+  Curve.BeginTransition();
+4040;
+  Curve.Begin(250, 0.070);    # R250 右・高架上のカーブ cant70mm
+
+4400;
+  Curve.BeginTransition();
+4440;
+  Curve.End();
+
+4600;
+  Gradient.BeginTransition();
+4650;
+  Gradient.Begin(0);          # 高架上・水平
+
+  # --- 眼下の市街（低いビル・商店）---
+  Repeater['shop_l'].Begin('0', -22, -8, 0, 0, 0, 0, 0, 45, 45, 'city_shop_a', 'city_shop_b');
+  Repeater['shop_r'].Begin('0',  22, -8, 0, 0, 180, 0, 0, 45, 45, 'city_shop_b', 'city_shop_a');
+  Structure['crossing'].Put('0', 0, -9, 0, 0, 0, 0, 0, 0);   # 眼下の踏切
+
+5100;
+  # --- 高架駅・汐見市 ---
+  Structure['elev_stn_shiomishi'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Station['shiomishi'].Put(-1, -5, 5);
+
+5600;
+  Repeater['shop_l'].End();
+  Repeater['shop_r'].End();
+
+5800;
+  # 帯④へ。高架終了。
+  Repeater['viaduct'].End();
+  Repeater['pier'].End();
+  SpeedLimit.End();

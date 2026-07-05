@@ -1,0 +1,41 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  ④ 地下  5.8 - 7.0 km
+#  高架から一気に地下へ潜行。地下駅・中央通。
+# ================================================================
+5800;
+  SpeedLimit.Begin(70);
+  Gradient.BeginTransition();
+5850;
+  Gradient.Begin(-30);        # -30‰ 地下へ潜行
+
+  # --- トンネル断面・照明・走行音（反響）---
+  Repeater['ugtun'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'ug_tunnel');
+  Repeater['uglight'].Begin('0', 0, 4.2, 0, 0, 0, 0, 0, 15, 15, 'ug_light');
+  RollingNoise.Change(1);     # トンネル用ローリングノイズへ切替
+  Fog.Interpolate(0.0001, 0.05, 0.05, 0.07);   # 暗いトンネル内
+
+6100;
+  Gradient.BeginTransition();
+6150;
+  Gradient.Begin(0);          # 地下・水平
+
+6300;
+  # --- 地下駅・中央通 ---
+  Structure['ug_stn_chuodori'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['ug_ad_panel'].Put('0', -4, 1.5, 0, 0, 90, 0, 0, 0);
+  Station['chuodori'].Put(-1, -5, 5);
+
+6600;
+  Gradient.BeginTransition();
+6650;
+  Gradient.Begin(28);         # +28‰ 地上（橋の高さ）へ上る
+
+7000;
+  # 帯⑤へ。トンネル終了・明かり区間へ復帰。
+  Repeater['ugtun'].End();
+  Repeater['uglight'].End();
+  RollingNoise.Change(0);     # 明かり区間の走行音へ戻す
+  Fog.Interpolate(0.0001, 0.75, 0.83, 0.94);
+  SpeedLimit.End();
