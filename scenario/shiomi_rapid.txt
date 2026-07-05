@@ -1,0 +1,15 @@
+BveTs Scenario 2.00:utf-8
+
+# ================================================================
+#  汐見線 快速「しおかぜ」霧山温泉行 （昼・晴）
+# ================================================================
+
+Route    = ..\Shiomi\map\main_rapid.txt
+Vehicle  = ..\..\vehicle\generic_3car\vehicle.txt
+
+Title        = 汐見線 快速しおかぜ 霧山温泉行
+RouteTitle   = 汐見湾鉄道 汐見線
+VehicleTitle = 通勤形 3両編成
+Author       = (作者名)
+Comment      = 主要駅のみ停車の快速。5駅を高速で通過し、38分で海から山へ駆け抜ける。
+Image        = thumbnail.png
