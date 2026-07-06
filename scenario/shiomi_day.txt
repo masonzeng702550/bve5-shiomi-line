@@ -4,8 +4,8 @@ BveTs Scenario 2.00:utf-8
 #  汐見線 普通 霧山温泉行 （昼・晴）
 # ================================================================
 
-Route    = ..\Shiomi\map\main.txt
-Vehicle  = ..\..\vehicle\generic_3car\vehicle.txt   # 任意の3両編成に差し替え可
+Route    = bve5-shiomi-line-main\Shiomi\map\main.txt
+Vehicle  = wadynankai\nankai8300\Vehicle\Vehicle_8301_N_8.txt
 
 Title        = 汐見線 普通 霧山温泉行
 RouteTitle   = 汐見湾鉄道 汐見線
