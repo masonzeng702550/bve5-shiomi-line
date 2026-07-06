@@ -9,7 +9,7 @@ $Gauge = 1.067;
 
 Structure.Load('..\structure\structures.txt');
 Station.Load('..\station\stations.txt');
-Signal.Load('..\signal\signal_atsn.txt');
+# Signal.Load('..\signal\signal_atsn.txt');   # 視覚信号を無効化中
 Sound.Load('..\sound\sounds.txt');
 Sound3D.Load('..\sound3d\sounds3d.txt');
 

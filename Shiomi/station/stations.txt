@@ -1,4 +1,4 @@
-BveTs Station List 2.02:utf-8
+BveTs Station List 2.00:utf-8
 
 # key, 停車場名, 到着時刻, 発車時刻, 停車時間[s], 早着[s], 進行信号までの距離, 降車完了, 乗車率, 到着sound, 発車sound, 再開扉確率, 扉挟み
 # --- 各駅停車・霧山温泉行（下り想定は将来対応） ---

@@ -7,7 +7,7 @@ BveTs Map 2.02:utf-8
 24000;
   Background.Change('bg_onsen_day');
   SpeedLimit.Begin(65);
-  Gradient.Begin(15);
+  # 勾配は前帯(渓谷)の +15‰ が継続。ここでは再指定しない。
 
   # --- 軌道・沿線の旅館 ---
   Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');

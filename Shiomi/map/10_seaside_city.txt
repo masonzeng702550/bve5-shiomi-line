@@ -6,6 +6,7 @@ BveTs Map 2.02:utf-8
 # ================================================================
 0;
   Background.Change('bg_city_day');
+  Gradient.BeginTransition();
   Gradient.Begin(0);
 
   # --- 起点駅ホーム（2面3線）---

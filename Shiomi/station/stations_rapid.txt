@@ -1,4 +1,4 @@
-BveTs Station List 2.02:utf-8
+BveTs Station List 2.00:utf-8
 
 # 快速「しおかぜ」用ダイヤ
 # 港公園・中央通・桜ヶ丘・杉本・霧山 の5駅を通過（到着時刻に p を指定）。
