@@ -148,10 +148,12 @@ Shiomi/
 
 ## Assets
 
-The 3D models (.x) and textures under `Shiomi/objects/`, and the train data,
-are not included in this repo (bundle them in a release package or obtain them
-from each distributor). Place them to match the paths in the structure list.
-See `Shiomi/objects/CREDITS.txt` for provenance.
+`Shiomi/objects/` ships **auto-generated placeholders** — a grey 1 m cube for
+every model and 0.1 s of silence for every sound — so the route loads without
+errors and can be driven end to end straight away (grey boxes for scenery).
+Replace each `.x` / `.wav` with real models/audio to get the actual scenery;
+follow the paths in the structure/sound lists. The train is still **not**
+bundled (see STEP 3). See `Shiomi/objects/PLACEHOLDER.txt` and `CREDITS.txt`.
 
 ## Licence
 

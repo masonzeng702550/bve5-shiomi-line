@@ -1,0 +1,31 @@
+================================================================
+  プレースホルダ素材について / About the placeholder assets
+================================================================
+
+本フォルダ配下の .x モデルと .wav サウンドは、
+**自動生成された仮の素材（プレースホルダ）** です。
+
+- .x  : 灰色の 1m 立方体（DirectX text 形式）。全ストラクチャ共通。
+- .wav: 0.1 秒の無音。全サウンド共通。
+
+これらは「路線が BVE 上でエラーなく読み込め、端から端まで運転できる」
+ことを目的とした仮のものです。線形・駅・時刻・ATS の確認に使えます。
+見た目は灰色の箱が並ぶだけなので、実際の風景を得るには各 .x / .wav を
+本物の 3D モデル・音声に差し替えてください（構成は structures.txt /
+sounds.txt / sounds3d.txt のパスに従います）。
+
+--------------------------------------------------------------
+
+The .x models and .wav sounds under this folder are AUTO-GENERATED
+PLACEHOLDERS:
+
+- .x  : a grey 1 m cube (DirectX text format), shared by every structure.
+- .wav: 0.1 s of silence, shared by every sound.
+
+They exist so the route loads without errors and can be driven end to end
+(useful for checking alignment, stations, timetable and ATS). To get the
+real scenery, replace each .x / .wav with proper models/audio, following the
+paths in structures.txt / sounds.txt / sounds3d.txt.
+
+出所・ライセンスは CREDITS.txt を参照 / See CREDITS.txt for provenance.
+================================================================

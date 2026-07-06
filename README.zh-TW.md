@@ -140,9 +140,11 @@ Shiomi/
 
 ## 關於素材
 
-`Shiomi/objects/` 底下的 3D 模型(.x)與貼圖，以及車輛資料，
-均未收錄於本 repo（請隨配布包附上，或自各配布來源取得），
-並依結構物列表的路徑放置。出處請見 `Shiomi/objects/CREDITS.txt`。
+`Shiomi/objects/` 已內含**自動產生的佔位素材（placeholder）**：所有結構物皆為
+灰色 1m 方塊、所有音效皆為 0.1 秒靜音,因此**開箱即可無錯誤載入、從頭開到尾**
+(畫面就是一堆灰方塊)。想要真正的風景,請把各 `.x` / `.wav` 換成實際模型／音效
+(位置依 structures.txt / sounds.txt 的路徑)。車輛仍**未收錄**(見 STEP 3)。
+詳見 `Shiomi/objects/PLACEHOLDER.txt` 與 `CREDITS.txt`。
 
 ## 授權
 
