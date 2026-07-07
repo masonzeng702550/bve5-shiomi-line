@@ -18,6 +18,10 @@ BveTs Map 2.02:utf-8
   # 沿線の農家列と防風林（田園を賑やかに）
   Repeater['farmrow'].Begin('0', -26, 0, 0, 0, 0, 0, 0, 55, 55, 'rural_farmhouse', 'rural_house_b', 'rural_house_c');
   Repeater['windbreak'].Begin('0', 18, 0, 0, 0, 180, 0, 1, 40, 40, 'mtn_cedar');
+  Repeater['tl_l'].Begin('0', -40, -0.5, 0, 0, 0, 0, 0, 30, 30, 'treeline');
+  Repeater['hl_l'].Begin('0', -95, -0.5, 0, 0, 0, 0, 0, 100, 100, 'distant_hills');
+  Repeater['tl_r'].Begin('0', 40, -0.5, 0, 0, 0, 0, 0, 30, 30, 'treeline');
+  Repeater['hl_r'].Begin('0', 95, -0.5, 0, 0, 0, 0, 0, 100, 100, 'distant_hills');
 
 13000;
   Structure['rural_farmhouse'].Put('0', -35, -1, 0, 0, 20, 0, 0, 0);
@@ -49,4 +53,8 @@ BveTs Map 2.02:utf-8
   Repeater['mtn_bg'].End();
   Repeater['farmrow'].End();
   Repeater['windbreak'].End();
+  Repeater['tl_l'].End();
+  Repeater['hl_l'].End();
+  Repeater['tl_r'].End();
+  Repeater['hl_r'].End();
   SpeedLimit.End();

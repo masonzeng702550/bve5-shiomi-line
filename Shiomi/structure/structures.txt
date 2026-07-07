@@ -112,6 +112,8 @@ bg_city_day,        ..\objects\common\bg\bg_city_day.x
 bg_rural_day,       ..\objects\common\bg\bg_rural_day.x
 bg_mountain_day,    ..\objects\common\bg\bg_mountain_day.x
 bg_onsen_day,       ..\objects\common\bg\bg_onsen_day.x
+treeline,           ..\objects\common\bg\treeline.x
+distant_hills,      ..\objects\common\bg\distant_hills.x
 
 # ---- 背景・夜 (夜行ダイヤ用) ----
 bg_sea_night,       ..\objects\common\bg\bg_sea_night.x
