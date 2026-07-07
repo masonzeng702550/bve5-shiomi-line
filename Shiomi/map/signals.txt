@@ -102,7 +102,9 @@ BveTs Map 2.02:utf-8
 26900;
   Beacon.Put(2, -1, 35);      # 進入 35km/h 照査
 27200;
-  Section.Begin(0);
+  # 終端は通常区間にして手前駅(霧山)の出発を妨げない。終端防護は速度照査地上子で行う。
+  Section.Begin(0, 1, 2, 3);
+  Section.SetSpeedLimit(0, 25, 45, );
   Structure['signal_mast'].Put('0', 3.0, 0, 0, 0, 0, 0, 0, 0);   # 信号機（静的・進行現示。ATS区間ロジックは別途有効）
   Beacon.Put(2, -1, 10);      # 車止め手前 10km/h 照査
 27380;
