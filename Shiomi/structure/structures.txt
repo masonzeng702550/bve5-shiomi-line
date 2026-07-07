@@ -38,6 +38,9 @@ coast_boat,         ..\objects\coast\fishing_boat.x
 coast_tetrapod,     ..\objects\coast\tetrapod.x
 coast_stn_todaishita, ..\objects\coast\stn_todaishita.x
 coast_stn_minatokoen, ..\objects\coast\stn_minatokoen.x
+coast_gull,         ..\objects\coast\gull.x
+coast_rock,         ..\objects\coast\sea_rock.x
+coast_beach,        ..\objects\coast\beach.x
 
 # ---- 帯③ 市街高架 (city) ----
 elev_viaduct,       ..\objects\city\viaduct_deck.x
@@ -114,6 +117,8 @@ bg_mountain_day,    ..\objects\common\bg\bg_mountain_day.x
 bg_onsen_day,       ..\objects\common\bg\bg_onsen_day.x
 treeline,           ..\objects\common\bg\treeline.x
 distant_hills,      ..\objects\common\bg\distant_hills.x
+bush,               ..\objects\common\bg\bush.x
+tree_green,         ..\objects\common\bg\tree_green.x
 
 # ---- 背景・夜 (夜行ダイヤ用) ----
 bg_sea_night,       ..\objects\common\bg\bg_sea_night.x
