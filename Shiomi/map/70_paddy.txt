@@ -15,6 +15,9 @@ BveTs Map 2.02:utf-8
   Repeater['paddy_r'].Begin('0',  50, -1.2, 0, 0, 180, 0, 0, 100, 100, 'paddy_plane');
   Repeater['mtn_bg'].Begin('0', -200, 0, 0, 0, 0, 0, 0, 200, 200, 'rural_mtn_bg');
   Sound3D['cicada'].Put(10, 3);
+  # 沿線の農家列と防風林（田園を賑やかに）
+  Repeater['farmrow'].Begin('0', -26, 0, 0, 0, 0, 0, 0, 55, 55, 'rural_farmhouse', 'rural_house_b', 'rural_house_c');
+  Repeater['windbreak'].Begin('0', 18, 0, 0, 0, 180, 0, 1, 40, 40, 'mtn_cedar');
 
 13000;
   Structure['rural_farmhouse'].Put('0', -35, -1, 0, 0, 20, 0, 0, 0);
@@ -31,7 +34,7 @@ BveTs Map 2.02:utf-8
   Track['up'].X.Interpolate(4.0, 0);
   Structure['rural_stn_tawara'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Station['tawara'].Put(-1, -5, 5);
-  Structure['stop_marker'].Put('0', -1.9, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
+  Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Track['up'].X.Interpolate(0, 0);
 
 15200;
@@ -43,4 +46,6 @@ BveTs Map 2.02:utf-8
   Repeater['paddy_r'].End();
   Repeater['embank'].End();
   Repeater['mtn_bg'].End();
+  Repeater['farmrow'].End();
+  Repeater['windbreak'].End();
   SpeedLimit.End();
