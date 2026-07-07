@@ -32,8 +32,8 @@ BveTs Map 2.02:utf-8
   Gradient.Begin(0);          # 高架上・水平
 
   # --- 眼下の市街（低いビル・商店）---
-  Repeater['shop_l'].Begin('0', -22, -8, 0, 0, 0, 0, 0, 45, 45, 'city_shop_a', 'city_shop_b');
-  Repeater['shop_r'].Begin('0',  22, -8, 0, 0, 180, 0, 0, 45, 45, 'city_shop_b', 'city_shop_a');
+  Repeater['shop_l'].Begin('0', -12, -8, 0, 0, 0, 0, 0, 22, 22, 'city_shop_a', 'city_shop_b');
+  Repeater['shop_r'].Begin('0',  12, -8, 0, 0, 180, 0, 0, 24, 24, 'city_shop_b', 'city_shop_a');
   Structure['crossing'].Put('0', 0, -9, 0, 0, 0, 0, 0, 0);   # 眼下の踏切
 
 5100;

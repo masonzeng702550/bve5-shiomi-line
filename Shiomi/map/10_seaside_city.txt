@@ -22,8 +22,8 @@ BveTs Map 2.02:utf-8
 
 100;
   Structure['city_port_crane'].Put('0', -45, 0, 0, 0, 20, 0, 0, 0);
-  Repeater['bldg_l'].Begin('0', -28, 0, 0, 0, 0, 0, 1, 60, 60, 'city_bldg_a', 'city_bldg_b', 'city_bldg_c');
-  Repeater['bldg_r'].Begin('0',  26, 0, 0, 0, 180, 0, 1, 55, 55, 'city_bldg_b', 'city_bldg_c', 'city_bldg_a');
+  Repeater['bldg_l'].Begin('0', -13, 0, 0, 0, 0, 0, 1, 24, 24, 'city_bldg_a', 'city_bldg_b', 'city_bldg_c');
+  Repeater['bldg_r'].Begin('0',  13, 0, 0, 0, 180, 0, 1, 26, 26, 'city_bldg_b', 'city_bldg_c', 'city_bldg_a');
 
 300;
   Structure['city_billboard'].Put('0', 20, 12, 0, 0, -90, 0, 0, 0);

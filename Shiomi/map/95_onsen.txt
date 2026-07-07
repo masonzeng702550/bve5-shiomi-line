@@ -11,8 +11,8 @@ BveTs Map 2.02:utf-8
 
   # --- 軌道・沿線の旅館 ---
   Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
-  Repeater['ryokan_l'].Begin('0', -14, 0, 0, 0, 0, 0, 0, 30, 30, 'onsen_ryokan_a', 'onsen_ryokan_b', 'onsen_ryokan_c');
-  Repeater['ryokan_r'].Begin('0',  14, 0, 0, 0, 180, 0, 0, 32, 32, 'onsen_ryokan_c', 'onsen_ryokan_a');
+  Repeater['ryokan_l'].Begin('0', -10, 0, 0, 0, 0, 0, 0, 20, 20, 'onsen_ryokan_a', 'onsen_ryokan_b', 'onsen_ryokan_c');
+  Repeater['ryokan_r'].Begin('0',  10, 0, 0, 0, 180, 0, 0, 22, 22, 'onsen_ryokan_c', 'onsen_ryokan_a');
   Sound3D['onsen_town'].Put(0, 3);
 
 24000;
