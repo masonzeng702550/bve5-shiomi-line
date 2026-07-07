@@ -16,6 +16,7 @@ kilo_post,          ..\objects\common\track\kilo_post.x
 crossing,           ..\objects\common\track\level_crossing.x
 ground_plane,       ..\objects\common\ground\ground_plane.x
 signal_mast,        ..\objects\common\track\signal_mast.x
+stop_marker,        ..\objects\common\track\stop_marker.x
 
 # ---- 帯① 海辺の都市 (city) ----
 city_station_shiomihama, ..\objects\city\stn_shiomihama.x
