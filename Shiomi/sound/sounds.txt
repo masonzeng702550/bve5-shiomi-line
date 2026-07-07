@@ -8,3 +8,28 @@ BveTs Sound List 2.00:utf-8
 tsutsumi_bell, ..\objects\common\sound\crossing_bell.wav
 depart_chime,  ..\objects\common\sound\depart_chime.wav
 arrive_chime,  ..\objects\common\sound\arrive_chime.wav
+
+# --- 車内放送(位置トリガ) ---
+welcome, ..\objects\common\sound\announce\welcome.wav
+next_minatokoen, ..\objects\common\sound\announce\next_minatokoen.wav
+next_todaishita, ..\objects\common\sound\announce\next_todaishita.wav
+next_shiomishi, ..\objects\common\sound\announce\next_shiomishi.wav
+next_chuodori, ..\objects\common\sound\announce\next_chuodori.wav
+next_okawabashi, ..\objects\common\sound\announce\next_okawabashi.wav
+next_sakuragaoka, ..\objects\common\sound\announce\next_sakuragaoka.wav
+next_tawara, ..\objects\common\sound\announce\next_tawara.wav
+next_sugimoto, ..\objects\common\sound\announce\next_sugimoto.wav
+next_keikokuguchi, ..\objects\common\sound\announce\next_keikokuguchi.wav
+next_kiriyama, ..\objects\common\sound\announce\next_kiriyama.wav
+next_kiriyamaonsen, ..\objects\common\sound\announce\next_kiriyamaonsen.wav
+soon_minatokoen, ..\objects\common\sound\announce\soon_minatokoen.wav
+soon_todaishita, ..\objects\common\sound\announce\soon_todaishita.wav
+soon_shiomishi, ..\objects\common\sound\announce\soon_shiomishi.wav
+soon_chuodori, ..\objects\common\sound\announce\soon_chuodori.wav
+soon_okawabashi, ..\objects\common\sound\announce\soon_okawabashi.wav
+soon_sakuragaoka, ..\objects\common\sound\announce\soon_sakuragaoka.wav
+soon_tawara, ..\objects\common\sound\announce\soon_tawara.wav
+soon_sugimoto, ..\objects\common\sound\announce\soon_sugimoto.wav
+soon_keikokuguchi, ..\objects\common\sound\announce\soon_keikokuguchi.wav
+soon_kiriyama, ..\objects\common\sound\announce\soon_kiriyama.wav
+soon_kiriyamaonsen, ..\objects\common\sound\announce\soon_kiriyamaonsen.wav

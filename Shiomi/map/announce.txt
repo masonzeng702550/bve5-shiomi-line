@@ -1,0 +1,29 @@
+BveTs Map 2.02:utf-8
+
+# ================================================================
+#  車内自動放送（位置トリガ）。各停ダイヤ用。
+#  次は…（駅の約550m手前）／まもなく…（約170m手前）
+# ================================================================
+120; Sound['welcome'].Play();
+850; Sound['next_minatokoen'].Play();
+1230; Sound['soon_minatokoen'].Play();
+2650; Sound['next_todaishita'].Play();
+3030; Sound['soon_todaishita'].Play();
+4550; Sound['next_shiomishi'].Play();
+4930; Sound['soon_shiomishi'].Play();
+5750; Sound['next_chuodori'].Play();
+6130; Sound['soon_chuodori'].Play();
+7950; Sound['next_okawabashi'].Play();
+8330; Sound['soon_okawabashi'].Play();
+10350; Sound['next_sakuragaoka'].Play();
+10730; Sound['soon_sakuragaoka'].Play();
+13650; Sound['next_tawara'].Play();
+14030; Sound['soon_tawara'].Play();
+17050; Sound['next_sugimoto'].Play();
+17430; Sound['soon_sugimoto'].Play();
+20450; Sound['next_keikokuguchi'].Play();
+20830; Sound['soon_keikokuguchi'].Play();
+24050; Sound['next_kiriyama'].Play();
+24430; Sound['soon_kiriyama'].Play();
+26850; Sound['next_kiriyamaonsen'].Play();
+27230; Sound['soon_kiriyamaonsen'].Play();
