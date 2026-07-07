@@ -9,3 +9,4 @@ cicada,     ..\objects\rural\sound\cicada.wav
 crossing,   ..\objects\common\sound\crossing_bell.wav
 onsen_town, ..\objects\onsen\sound\town_ambience.wav
 rain,       ..\objects\common\sound\rain_loop.wav
+guide_bell, ..\objects\common\sound\guide_bell.wav

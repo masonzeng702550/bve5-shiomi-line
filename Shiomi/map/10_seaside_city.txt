@@ -13,6 +13,7 @@ BveTs Map 2.02:utf-8
   Structure['city_station_shiomihama'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Structure['city_platform'].Put('0', 0, 0, 0, 0, 0, 0, 1, 70);
   Station['shiomihama'].Put(-1, -5, 5);
+  Sound3D['guide_bell'].Put(-4, 2);   # 閘口の誘導鈴（盲導）
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
   # --- 軌道・架線 ---
