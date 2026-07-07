@@ -26,7 +26,7 @@ BveTs Map 2.02:utf-8
   Structure['ug_stn_chuodori'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Structure['ug_ad_panel'].Put('0', -4, 1.5, 0, 0, 90, 0, 0, 0);
   Station['chuodori'].Put(-1, -5, 5);
-  Structure['stop_marker'].Put('0', -1.9, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
+  Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
 6600;
   Gradient.BeginTransition();

@@ -13,7 +13,7 @@ BveTs Map 2.02:utf-8
   Gradient.Begin(10);         # +10‰ 里山へ
 
   # --- 切通し・杉林・茶畑 ---
-  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');
   Repeater['cut_l'].Begin('0', -8, 0, 0, 0, 0, 0, 0, 25, 25, 'mtn_cutting');
   Repeater['cut_r'].Begin('0',  8, 0, 0, 0, 180, 0, 0, 25, 25, 'mtn_cutting');
   Repeater['cedar_l'].Begin('0', -12, 0, 0, 0, 0, 0, 0, 12, 12, 'mtn_cedar');

@@ -19,7 +19,7 @@ BveTs Map 2.02:utf-8
 7500;
   # --- 上路プレートガーダー ×4（アプローチ側）---
   Repeater['gird'].Begin('0', 0, -1.2, 0, 0, 0, 0, 1, 20, 20, 'br_plate_deck');
-  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_bridge');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'rail_bridge');
   RollingNoise.Change(2);     # 鉄橋走行音（轟音）
 
 7800;
@@ -41,7 +41,7 @@ BveTs Map 2.02:utf-8
   Track['up'].X.Interpolate(4.0, 0);
   Structure['br_stn_okawabashi'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Station['okawabashi'].Put(-1, -5, 5);
-  Structure['stop_marker'].Put('0', -1.9, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
+  Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Repeater['river'].End();
   # railtrack はここでは終了せず、次帯(桜並木)で ballast に再定義する
   Track['up'].X.Interpolate(0, 0);

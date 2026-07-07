@@ -16,7 +16,7 @@ BveTs Map 2.02:utf-8
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
   # --- 軌道・架線 ---
-  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_slab');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'rail_slab');
   Repeater['cate'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 40, 40, 'catenary_pole');
   Structure['city_footbridge'].Put('0', 0, 6.5, 0, 0, 0, 0, 0, 0);
 

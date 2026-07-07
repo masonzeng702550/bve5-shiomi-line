@@ -10,7 +10,7 @@ BveTs Map 2.02:utf-8
   # 勾配は前帯(渓谷)の +15‰ が継続。ここでは再指定しない。
 
   # --- 軌道・沿線の旅館 ---
-  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 25, 25, 'rail_ballast');
+  Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');
   Repeater['ryokan_l'].Begin('0', -10, 0, 0, 0, 0, 0, 0, 20, 20, 'onsen_ryokan_a', 'onsen_ryokan_b', 'onsen_ryokan_c');
   Repeater['ryokan_r'].Begin('0',  10, 0, 0, 0, 180, 0, 0, 22, 22, 'onsen_ryokan_c', 'onsen_ryokan_a');
   Sound3D['onsen_town'].Put(0, 3);
