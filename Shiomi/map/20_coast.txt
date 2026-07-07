@@ -56,7 +56,7 @@ BveTs Map 2.02:utf-8
 3200;
   # --- 交換駅・灯台下（副本線を敷設）---
   Track['up'].X.Interpolate(4.0, 0);
-  Structure['coast_stn_todaishita'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['coast_stn_todaishita'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['todaishita'].Put(-1, -5, 5);
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 

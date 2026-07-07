@@ -38,7 +38,7 @@ BveTs Map 2.02:utf-8
 
 5100;
   # --- 高架駅・汐見市 ---
-  Structure['elev_stn_shiomishi'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['elev_stn_shiomishi'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['shiomishi'].Put(-1, -5, 5);
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 

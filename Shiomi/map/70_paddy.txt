@@ -32,7 +32,7 @@ BveTs Map 2.02:utf-8
 14200;
   # --- 交換駅・田原（3本目の交換）---
   Track['up'].X.Interpolate(4.0, 0);
-  Structure['rural_stn_tawara'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
+  Structure['rural_stn_tawara'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['tawara'].Put(-1, -5, 5);
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Track['up'].X.Interpolate(0, 0);
