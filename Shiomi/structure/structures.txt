@@ -17,6 +17,7 @@ crossing,           ..\objects\common\track\level_crossing.x
 ground_plane,       ..\objects\common\ground\ground_plane.x
 signal_mast,        ..\objects\common\track\signal_mast.x
 stop_marker,        ..\objects\common\track\stop_marker.x
+platform_seg,        ..\objects\common\track\platform_seg.x
 
 # ---- 帯① 海辺の都市 (city) ----
 city_station_shiomihama, ..\objects\city\stn_shiomihama.x
@@ -36,6 +37,7 @@ coast_lighthouse,   ..\objects\coast\lighthouse.x
 coast_boat,         ..\objects\coast\fishing_boat.x
 coast_tetrapod,     ..\objects\coast\tetrapod.x
 coast_stn_todaishita, ..\objects\coast\stn_todaishita.x
+coast_stn_minatokoen, ..\objects\coast\stn_minatokoen.x
 
 # ---- 帯③ 市街高架 (city) ----
 elev_viaduct,       ..\objects\city\viaduct_deck.x

@@ -22,7 +22,7 @@ BveTs Map 2.02:utf-8
   # --- 霧山駅（山中の小駅）。ここから霧が濃くなる ---
   Structure['mtn_stn_kiriyama'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Station['kiriyama'].Put(-1, -5, 5);
-  Structure['stop_marker'].Put('0', -1.9, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
+  Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Fog.Interpolate(0.004, 0.82, 0.84, 0.88);
   Structure['onsen_steam'].Put('0', -18, 0, 20, 0, 0, 0, 0, 0);   # 湯煙
 
@@ -60,11 +60,14 @@ BveTs Map 2.02:utf-8
 27340;
   Curve.End();
 
+27230;
+  # 終点ホーム（進入曲線 R200 上のため、セグメント繰り返しで曲線に追従）
+  Repeater['plat_t'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 8, 8, 'platform_seg');
 27400;
-  # --- 終着・霧山温泉（頭端式 1面2線）---
-  Structure['onsen_stn_terminal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
-  Station['kiriyamaonsen'].Put(1, -5, 5);   # 終点は右側扉
-  Structure['stop_marker'].Put('0', -1.9, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
+  # --- 終着・霧山温泉（頭端式）。ホームは左側に統一 ---
+  Station['kiriyamaonsen'].Put(-1, -5, 5);   # 左側扉（ホームと一致）
+  Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標（月台対側）
+  Repeater['plat_t'].End();
   Repeater['ryokan_l'].End();
   Repeater['ryokan_r'].End();
   Repeater['railtrack'].End();
