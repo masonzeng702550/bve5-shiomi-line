@@ -7,3 +7,4 @@ BveTs Sound List 2.00:utf-8
 # 駅・踏切など単発／繰り返し音
 tsutsumi_bell, ..\objects\common\sound\crossing_bell.wav
 depart_chime,  ..\objects\common\sound\depart_chime.wav
+arrive_chime,  ..\objects\common\sound\arrive_chime.wav
