@@ -11,6 +11,12 @@ BveTs Map 2.02:utf-8
 
   # --- 軌道・沿線の旅館 ---
   Repeater['railtrack'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');
+  Repeater['o_bl'].Begin('0', -3.2, -0.5, 0, 0, 0, 0, 0, 6, 6, 'bush');
+  Repeater['o_br'].Begin('0', 3.2, -0.5, 0, 0, 180, 0, 0, 6, 6, 'bush');
+  Repeater['o_fl'].Begin('0', -14, -0.4, 0, 0, 0, 0, 0, 9, 9, 'tree_green');
+  Repeater['o_fr'].Begin('0', 14, -0.4, 0, 0, 180, 0, 0, 10, 10, 'tree_green');
+  Repeater['o_tl'].Begin('0', -40, -0.5, 0, 0, 0, 0, 0, 30, 30, 'treeline');
+  Repeater['o_tr'].Begin('0', 40, -0.5, 0, 0, 180, 0, 0, 30, 30, 'treeline');
   Repeater['ryokan_l'].Begin('0', -10, 0, 0, 0, 0, 0, 0, 20, 20, 'onsen_ryokan_a', 'onsen_ryokan_b', 'onsen_ryokan_c');
   Repeater['ryokan_r'].Begin('0',  10, 0, 0, 0, 180, 0, 0, 22, 22, 'onsen_ryokan_c', 'onsen_ryokan_a');
   Sound3D['onsen_town'].Put(0, 3);
@@ -68,6 +74,12 @@ BveTs Map 2.02:utf-8
   Station['kiriyamaonsen'].Put(-1, -5, 5);   # 左側扉（ホームと一致）
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標（月台対側）
   Repeater['plat_t'].End();
+  Repeater['o_bl'].End();
+  Repeater['o_br'].End();
+  Repeater['o_fl'].End();
+  Repeater['o_fr'].End();
+  Repeater['o_tl'].End();
+  Repeater['o_tr'].End();
   Repeater['ryokan_l'].End();
   Repeater['ryokan_r'].End();
   Repeater['railtrack'].End();
