@@ -7,16 +7,16 @@ BveTs Train 1.01:utf-8
 Key = emu_car
 Distance = 0
 Span = 14
-Z = 9.8
+Z = -16.8
 
 [Structure]
 Key = emu_car
 Distance = 20
 Span = 14
-Z = 9.8
+Z = -16.8
 
 [Structure]
 Key = emu_car
 Distance = 40
 Span = 14
-Z = 9.8
+Z = -16.8
