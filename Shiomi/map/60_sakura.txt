@@ -37,6 +37,8 @@ BveTs Map 2.02:utf-8
 10200;
   Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切2
 
+10780;
+  Repeater['wait_sk'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
 10900;
   # --- 桜ヶ丘駅 ---
   Structure['rural_stn_sakuragaoka'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
@@ -44,6 +46,8 @@ BveTs Map 2.02:utf-8
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Structure['rural_school'].Put('0', 30, 0, 60, 0, -30, 0, 0, 0);
 
+11020;
+  Repeater['wait_sk'].End();
 11400;
   Structure['crossing'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);   # 踏切3
 11600;

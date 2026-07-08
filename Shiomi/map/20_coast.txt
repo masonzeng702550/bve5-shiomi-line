@@ -59,6 +59,8 @@ BveTs Map 2.02:utf-8
 3000;
   Structure['coast_lighthouse'].Put('0', -35, 8, 0, 0, 15, 0, 0, 0);
 
+3080;
+  Repeater['loop_td'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
 3200;
   # --- 交換駅・灯台下（副本線を敷設）---
   Track['up'].X.Interpolate(4.0, 0);
@@ -66,6 +68,8 @@ BveTs Map 2.02:utf-8
   Station['todaishita'].Put(-1, -5, 5);
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
+3320;
+  Repeater['loop_td'].End();
 3600;
   Gradient.BeginTransition();
 3650;

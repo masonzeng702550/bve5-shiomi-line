@@ -60,6 +60,8 @@ BveTs Map 2.02:utf-8
 20790;
   Curve.End();
 
+20880;
+  Repeater['loop_kk'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
 21000;
   # --- 交換駅・渓谷口（渓流沿いの小駅）---
   Track['up'].X.Interpolate(4.0, 0);
@@ -70,6 +72,8 @@ BveTs Map 2.02:utf-8
   Track['up'].X.Interpolate(0, 0);
 
 # --- トンネル3 (610m・最長) ---
+21120;
+  Repeater['loop_kk'].End();
 21200;
   Structure['mtn_tunnel_portal'].Put('0', 0, 0, 0, 0, 0, 0, 0, 0);
   Repeater['tun3'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 10, 10, 'mtn_tunnel_seg');
