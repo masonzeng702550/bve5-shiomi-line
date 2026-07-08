@@ -55,14 +55,14 @@ BveTs Map 2.02:utf-8
 27160;
   Gradient.Begin(0);
 
+27230;
+  # 終点ホーム（進入曲線 R200 上のため、セグメント繰り返しで曲線に追従）
+  Repeater['plat_t'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 8, 8, 'platform_seg');
 27300;
   Curve.BeginTransition();
 27340;
   Curve.End();
 
-27230;
-  # 終点ホーム（進入曲線 R200 上のため、セグメント繰り返しで曲線に追従）
-  Repeater['plat_t'].Begin('0', 0, 0, 0, 0, 0, 0, 1, 8, 8, 'platform_seg');
 27400;
   # --- 終着・霧山温泉（頭端式）。ホームは左側に統一 ---
   Station['kiriyamaonsen'].Put(-1, -5, 5);   # 左側扉（ホームと一致）
