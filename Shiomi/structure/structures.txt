@@ -17,6 +17,19 @@ crossing,           ..\objects\common\track\level_crossing.x
 ground_plane,       ..\objects\common\ground\ground_plane.x
 signal_mast,        ..\objects\common\track\signal_mast.x
 stop_marker,        ..\objects\common\track\stop_marker.x
+# ---- 駅名標(日本語) ----
+ekimei_shiomihama,  ..\objects\signs\ekimei_shiomihama.x
+ekimei_minatokoen,  ..\objects\signs\ekimei_minatokoen.x
+ekimei_todaishita,  ..\objects\signs\ekimei_todaishita.x
+ekimei_shiomishi,   ..\objects\signs\ekimei_shiomishi.x
+ekimei_chuodori,    ..\objects\signs\ekimei_chuodori.x
+ekimei_okawabashi,  ..\objects\signs\ekimei_okawabashi.x
+ekimei_sakuragaoka, ..\objects\signs\ekimei_sakuragaoka.x
+ekimei_tawara,      ..\objects\signs\ekimei_tawara.x
+ekimei_sugimoto,    ..\objects\signs\ekimei_sugimoto.x
+ekimei_keikokuguchi,..\objects\signs\ekimei_keikokuguchi.x
+ekimei_kiriyama,    ..\objects\signs\ekimei_kiriyama.x
+ekimei_kiriyamaonsen,..\objects\signs\ekimei_kiriyamaonsen.x
 platform_r,         ..\objects\common\track\platform_r.x
 turnout,            ..\objects\common\track\turnout.x
 emu_car,            ..\objects\common\track\emu_car.x

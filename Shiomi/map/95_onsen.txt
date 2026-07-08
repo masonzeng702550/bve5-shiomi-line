@@ -28,6 +28,7 @@ BveTs Map 2.02:utf-8
   # --- 霧山駅（山中の小駅）。ここから霧が濃くなる ---
   Structure['mtn_stn_kiriyama'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['kiriyama'].Put(-1, -5, 5);
+  Structure['ekimei_kiriyama'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 駅名標
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Fog.Interpolate(0.004, 0.82, 0.84, 0.88);
   Structure['onsen_steam'].Put('0', -18, 0, 20, 0, 0, 0, 0, 0);   # 湯煙
@@ -72,6 +73,7 @@ BveTs Map 2.02:utf-8
 27400;
   # --- 終着・霧山温泉（頭端式）。ホームは左側に統一 ---
   Station['kiriyamaonsen'].Put(-1, -5, 5);   # 左側扉（ホームと一致）
+  Structure['ekimei_kiriyamaonsen'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 駅名標
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標（月台対側）
   Repeater['plat_t'].End();
   Repeater['o_bl'].End();
