@@ -17,6 +17,16 @@ crossing,           ..\objects\common\track\level_crossing.x
 ground_plane,       ..\objects\common\ground\ground_plane.x
 signal_mast,        ..\objects\common\track\signal_mast.x
 stop_marker,        ..\objects\common\track\stop_marker.x
+# ---- 広告看板(日本語) ----
+ad_ramen,           ..\objects\ad\ad_ramen.x
+ad_onsen,           ..\objects\ad\ad_onsen.x
+ad_super,           ..\objects\ad\ad_super.x
+ad_fudosan,         ..\objects\ad\ad_fudosan.x
+ad_juku,            ..\objects\ad\ad_juku.x
+# ---- 和風建築 ----
+machiya,            ..\objects\rural\machiya.x
+kura,               ..\objects\rural\kura.x
+wa_house,           ..\objects\rural\wa_house.x
 # ---- 駅名標(日本語) ----
 ekimei_shiomihama,  ..\objects\signs\ekimei_shiomihama.x
 ekimei_minatokoen,  ..\objects\signs\ekimei_minatokoen.x
