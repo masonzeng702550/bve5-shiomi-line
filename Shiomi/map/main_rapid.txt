@@ -27,4 +27,5 @@ include '90_gorge.txt';
 include '95_onsen.txt';
 
 include 'signals.txt';
+include 'station_pa.txt';       # 駅放送
 # include 'trains.txt';   # 対向列車は無効化中

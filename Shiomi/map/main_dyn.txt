@@ -27,5 +27,7 @@ include '95_onsen.txt';
 include 'signals.txt';
 include 'announce.txt';
 
+include 'station_pa.txt';       # 駅放送
+
 # ---- 動的対向列車（実験）----
 include 'trains_dyn.txt';

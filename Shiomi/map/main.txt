@@ -33,5 +33,7 @@ include '95_onsen.txt';          # ⑩ 24.0 - 27.4 霧の温泉街
 
 # ---- 保安・列車 ----
 include 'signals.txt';           # 閉塞・信号・地上子
-include 'announce.txt';       # 車内放送
+include 'announce.txt';
+
+include 'station_pa.txt';       # 駅放送       # 車内放送
 # include 'trains.txt';            # 対向列車   # 対向列車は無効化中

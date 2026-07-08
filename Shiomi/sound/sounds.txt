@@ -33,3 +33,8 @@ soon_sugimoto, ..\objects\common\sound\announce\soon_sugimoto.wav
 soon_keikokuguchi, ..\objects\common\sound\announce\soon_keikokuguchi.wav
 soon_kiriyama, ..\objects\common\sound\announce\soon_kiriyama.wav
 soon_kiriyamaonsen, ..\objects\common\sound\announce\soon_kiriyamaonsen.wav
+
+# --- 駅放送(接近/発車メロディ/ドア閉) ---
+pa_arrive, ..\objects\common\sound\pa\pa_arrive.wav
+pa_melody, ..\objects\common\sound\pa\pa_melody.wav
+pa_doors,  ..\objects\common\sound\pa\pa_doors.wav
