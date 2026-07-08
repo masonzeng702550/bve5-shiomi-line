@@ -17,6 +17,10 @@ crossing,           ..\objects\common\track\level_crossing.x
 ground_plane,       ..\objects\common\ground\ground_plane.x
 signal_mast,        ..\objects\common\track\signal_mast.x
 stop_marker,        ..\objects\common\track\stop_marker.x
+platform_r,         ..\objects\common\track\platform_r.x
+turnout,            ..\objects\common\track\turnout.x
+emu_car,            ..\objects\common\track\emu_car.x
+express_car,        ..\objects\common\track\express_car.x
 platform_seg,        ..\objects\common\track\platform_seg.x
 
 # ---- 帯① 海辺の都市 (city) ----

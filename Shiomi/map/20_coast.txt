@@ -61,13 +61,19 @@ BveTs Map 2.02:utf-8
 
 3080;
   Repeater['loop_td'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
+  Structure['turnout'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 転轍器
+3170;
+  Repeater['x_todaishita'].Begin('0', 4.2, 0, 0, 0, 180, 0, 1, 20, 20, 'emu_car');   # 他列車(静的)
 3200;
   # --- 交換駅・灯台下（副本線を敷設）---
   Track['up'].X.Interpolate(4.0, 0);
   Structure['coast_stn_todaishita'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['todaishita'].Put(-1, -5, 5);
+  Structure['platform_r'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 対向ホーム
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
+3230;
+  Repeater['x_todaishita'].End();
 3320;
   Repeater['loop_td'].End();
 3600;

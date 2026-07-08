@@ -38,6 +38,9 @@ BveTs Map 2.02:utf-8
 
 4980;
   Repeater['wait_ss'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
+  Structure['turnout'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 転轍器
+5070;
+  Repeater['x_shiomishi'].Begin('0', 4.2, 0, 0, 0, 180, 0, 1, 20, 20, 'express_car');   # 他列車(静的)
 5100;
   # --- 高架駅・汐見市 ---
   Structure['elev_stn_shiomishi'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
@@ -45,6 +48,8 @@ BveTs Map 2.02:utf-8
   Sound3D['guide_bell'].Put(-4, 2);   # 閘口の誘導鈴（盲導）
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
 
+5130;
+  Repeater['x_shiomishi'].End();
 5220;
   Repeater['wait_ss'].End();
 5600;

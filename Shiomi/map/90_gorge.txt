@@ -62,11 +62,13 @@ BveTs Map 2.02:utf-8
 
 20880;
   Repeater['loop_kk'].Begin('0', 4.2, -0.02, 0, 0, 0, 0, 1, 10, 10, 'rail_ballast');   # 反向/待避線
+  Structure['turnout'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 転轍器
 21000;
   # --- 交換駅・渓谷口（渓流沿いの小駅）---
   Track['up'].X.Interpolate(4.0, 0);
   Structure['mtn_stn_keikokuguchi'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);
   Station['keikokuguchi'].Put(-1, -5, 5);
+  Structure['platform_r'].Put('0', 0, 0, 0, 0, 0, 0, 1, 0);   # 対向ホーム
   Structure['stop_marker'].Put('0', 2.0, 0, 0, 0, 0, 0, 0, 0);   # 停止位置目標
   Structure['mtn_suspension'].Put('0', -30, 4, 40, 0, 0, 0, 0, 0);   # 遠景の吊橋
   Track['up'].X.Interpolate(0, 0);
