@@ -1,0 +1,22 @@
+BveTs Train 1.01:utf-8
+
+# 他列車ファイル: 対向の通勤形3両。車体は emu_car(ストラクチャーリストのキー)を使用。
+# Distance = 各車の原点からの位置[m]、Span = 軸距、Z = 車体中心が来る位置。
+
+[Structure]
+Key = emu_car
+Distance = 0
+Span = 14
+Z = 9.8
+
+[Structure]
+Key = emu_car
+Distance = 20
+Span = 14
+Z = 9.8
+
+[Structure]
+Key = emu_car
+Distance = 40
+Span = 14
+Z = 9.8
